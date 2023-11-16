@@ -5,15 +5,14 @@ def my_answer():
 
     # 降順にソートする
     a.sort(reverse=True)
-    a_dict = {key: a[key] for key in range(N)}
     score_a = 0
     score_b = 0
 
-    for key, value in a_dict.items():
-        if key % 2 == 0 or key == 0:
-            score_a += value
+    for i in range(N):
+        if i % 2 == 0:
+            score_a += a[i]
         else:
-            score_b += value
+            score_b += a[i]
     print(score_a - score_b)
 
 
