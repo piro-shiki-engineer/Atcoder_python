@@ -1,2 +1,1 @@
 # Atcoder_python
-test
