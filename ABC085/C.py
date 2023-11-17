@@ -4,13 +4,13 @@ def my_answer():
 
     for i in range(n+1):
         for j in range(n+1-i):
-            for k in range(n+1-i-j):
-                count = 10000*i + 5000*j + 1000*k
-                if count == total:
-                    x = i
-                    y = j
-                    z = k
-                    break
+            k = n - i - j
+            count = 10000*i + 5000*j + 1000*k
+            if count == total:
+                x = i
+                y = j
+                z = k
+                break
     print("{} {} {}".format(x, y, z))
 
 
