@@ -1,18 +1,18 @@
+import itertools
+import collections
+
+
 def my_answer():
     n = int(input())
-    s = list(map(str, input()))
-    s_part = []
-    tmp = str
-    for i in range(n):
-        if s[i] not in s_part:
-            s_part.append(s[i])
-        elif tmp not in s_part:
-            tmp = str(tmp) + s[i]
-            s_part.append(tmp)
-        else:
-            tmp = str
+    s = input()
 
-    print(len(s_part))
+    # 連続したアルファベットを記録、初期値は0
+    d = collections.defaultdict(int)
+
+    for c, g in itertools.groupby(s):
+        d[c] = max(d[c], len(list(g)))
+
+    print(sum(d.values()))
 
 
 if __name__ == '__main__':
