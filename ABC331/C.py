@@ -10,11 +10,13 @@ def my_answer():
 
     for index, value in enumerate(A):
         B[value].append(index)
-
-    for val, i_list in sorted(B.items())[::-1]:
+    # print(B)
+    # print(sorted(B.items()))
+    for val, i_list in sorted(B.items(), reverse=True):
+        # print(val, i_list)
         for i in i_list:
             ans[i] = total
-        total += val*len(i_list)
+        total += val
 
     print(*ans)
 
