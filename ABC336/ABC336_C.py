@@ -15,6 +15,7 @@ def my_answer():
 
     if n == 0:
         print(0)
+        exit()
 
     while n > 0:
         answer += str(n % 5)
