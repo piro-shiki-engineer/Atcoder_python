@@ -14,7 +14,7 @@ def my_answer():
 
         elif field[taka_i][taka_j] == '#':
             field[taka_i][taka_j] = '.'
-            dir_index = (dir_index + 3) % 4 #マイナスは使わずに余りを使って行動選択
+            dir_index = (dir_index + 3) % 4 #マイナスは使わずに余りを元に行動選択
 
         next_pos = dirs[dir_index]
         if taka_j < 0: taka_j += W
@@ -84,7 +84,5 @@ def gpt_answer():
         print(''.join(row))
 
 
-
-
 if __name__ == '__main__':
-    my_answer2()
+    my_answer()
