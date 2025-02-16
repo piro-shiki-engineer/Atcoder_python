@@ -1,7 +1,7 @@
 def my_answer():
     N = int(input())
-    A_vector = list(map(int , input().split()))
-    B_vector = list(map(int , input().split()))
+    A_vector = list(map(int, input().split()))
+    B_vector = list(map(int, input().split()))
     Dot_val = 0
 
     for i in range(N):

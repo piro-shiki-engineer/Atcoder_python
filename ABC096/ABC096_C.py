@@ -5,7 +5,8 @@ def my_answer():
     for _ in range(H):
         table.append(list(input()))
 
-    for i in range(H*)
+    for i in range(H):
+        pass
 
 if __name__ == '__main__':
     my_answer()

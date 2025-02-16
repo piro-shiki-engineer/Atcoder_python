@@ -1,9 +1,5 @@
 def min_time(stages, floor, simple_goal):
-
-
-
-
-
+    pass
 
 def my_answer():
     N = int(input())
@@ -28,9 +24,7 @@ def my_answer():
         op2_next = stage_now[2]
         time = 0
         for op in [op1_time, op2_time]:
-            time
-
-
+            pass
 
     print(stages)
     print(simple_goal_time)

@@ -9,7 +9,7 @@ def my_answer():
             beans[str(color)].append(delicious)
         else:
             beans[str(color)] = []
-            beans[str(color)].append(delicious)
+            beans[str(coloar)].append(delicious)
 
     for color in beans.keys():
         ans = max(ans, min(beans[color]))
